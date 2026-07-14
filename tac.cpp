@@ -21,3 +21,9 @@ if (node->value == "=") {
     std::cout << leftVal << " = " << rightVal << std::endl;
     return leftVal;
 }
+std::string temp = newTemp();
+std::cout << temp << " = " << leftVal << " "
+          << node->value << " "
+          << rightVal << std::endl;
+
+return temp;
