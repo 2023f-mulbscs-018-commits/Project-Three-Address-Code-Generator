@@ -5,6 +5,8 @@
 std::vector<Token> Lexer::tokenize(std::string input) {
     std::vector<Token> tokens;
     for (size_t i = 0; i < input.length(); i++) {
+         if (isspace(input[i])) continue; // Skip spaces
+
     }
     return tokens;
 }
