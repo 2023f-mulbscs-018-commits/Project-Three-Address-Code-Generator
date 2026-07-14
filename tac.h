@@ -7,6 +7,7 @@
 
 class TACGenerator {
 private:
+    
     int tempCount = 1;
     std::string newTemp();
 
