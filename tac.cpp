@@ -17,3 +17,7 @@ std::string TACGenerator::generate(ASTNode* node) {
 }
 std::string leftVal = generate(node->left);
 std::string rightVal = generate(node->right);
+if (node->value == "=") {
+    std::cout << leftVal << " = " << rightVal << std::endl;
+    return leftVal;
+}
