@@ -6,3 +6,12 @@ std::string TACGenerator::newTemp() {
 std::string TACGenerator::generate(ASTNode* node) {
     return "";
 }
+std::string TACGenerator::generate(ASTNode* node) {
+    if (!node)
+        return "";
+
+    if (!node->left && !node->right)
+        return node->value;
+
+    return "";
+}
