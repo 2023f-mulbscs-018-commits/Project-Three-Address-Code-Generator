@@ -1,4 +1,9 @@
 #ifndef LEXER_H
 #define LEXER_H
-#include 
-#include
+#include<string>
+#include<vector>
+
+struct Token {
+    std::string type;
+    std::string value;
+};
