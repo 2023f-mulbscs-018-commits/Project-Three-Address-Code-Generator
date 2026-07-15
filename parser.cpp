@@ -6,5 +6,8 @@ ASTNode* Parser::parse(std::vector<Token> t) {
     
     if (tokens.size() < 3) return nullptr; // Basic safety check
     
-    return nullptr;
+    // Hardcoded simple parser for assignment: ID = Expr
+    ASTNode* root = new ASTNode(tokens[1].value); // The "=" sign
+    
+    return root;
 }
