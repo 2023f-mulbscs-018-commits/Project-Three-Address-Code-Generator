@@ -20,10 +20,13 @@ int main() {
     ASTNode* syntaxTree = parser.parse(tokens);
     // Step 3: TAC Generation
     if (syntaxTree != nullptr) {
-        
+        TACGenerator generator;
+        cout << "Generated TAC:" << endl;
+        generator.generate(syntaxTree);
     } else {
         cout << "Error: Syntax Tree generation failed." << endl;
     }
+
     return 0;
 
 }
