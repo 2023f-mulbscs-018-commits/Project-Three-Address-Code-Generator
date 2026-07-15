@@ -14,4 +14,12 @@ struct ASTNode {
     ASTNode(std::string val) : value(val), left(nullptr), right(nullptr) {}
 };
 
+class Parser {
+private:
+    std::vector<Token> tokens;
+    int pos = 0;
+public:
+    ASTNode* parse(std::vector<Token> t);
+};
+
 #endif
