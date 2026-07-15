@@ -15,6 +15,15 @@ int main() {
     // Step 1: Lexical Analysis
     Lexer lexer;
     vector tokens = lexer.tokenize(sourceCode);
+    // Step 2: Syntax Analysis
+    Parser parser;
+    ASTNode* syntaxTree = parser.parse(tokens);
+    // Step 3: TAC Generation
+    if (syntaxTree != nullptr) {
+        
+    } else {
+        cout << "Error: Syntax Tree generation failed." << endl;
+    }
     return 0;
 
 }
