@@ -10,6 +10,6 @@ struct Token {
 
 class Lexer {
 public:
-    std::vector tokenize(std::string input);
+    std::vector<Token> tokenize(std::string input);
 };
 #endif
